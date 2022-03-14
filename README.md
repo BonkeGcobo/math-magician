@@ -17,10 +17,11 @@ coming soon
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
 
 git clone link [https://github.com/BonkeGcobo/math-magician.git] 
 cd math-magician
+npm install 
+npm start
 
 
 To get a local copy up and running follow these simple example steps.
