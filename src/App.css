@@ -1,39 +1,160 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&display=swap');
+
+.calcStructure {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-right: 1rem;
+}
+
+.outPutContainer {
+  background-color: #858694;
+  text-align: end;
+  color: #fff;
+}
+
+.btnSection {
+  display: flex;
+  height: 90%;
+}
+
+.lftBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-style: none;
+}
+
+.lftBtnsAll {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.rgtBtns {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.lbtn {
+  border-style: none;
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 78px;
+  cursor: pointer;
+}
+
+.zero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.calBtn {
+  border: 1px solid #d1d1d1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rbtn {
+  border-style: none;
+  background-color: #f5913e;
+  width: 100%;
+  height: 78px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #f5913e;
+  height: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.NavLinks {
+  list-style: none;
+  display: flex;
+  margin-right: 0.5rem;
+  gap: 1rem;
+  color: #fff;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.calSection {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  font-family: 'roboto', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  border-left: 1px solid #fff;
+  padding-left: 1rem;
+}
+
+.Home-section {
+  text-align: center;
+  padding-top: 1rem;
+  background-color: #e0e0e0;
+  height: 80%;
+  padding-bottom: 7rem;
+}
+
+.welcome-title {
+  font-family: 'roboto', sans-serif;
+}
+
+.Text1,
+.Text2 {
+  font-family: 'roboto', sans-serif;
+}
+
+.footer {
+  background-color: #f5913e;
+  color: #fff;
+  padding: 2rem;
+  font-family: 'roboto', sans-serif;
+  height: 10%;
+}
+
+.homeText {
+  text-align: center;
+}
+
+.Math {
+  font-family: 'roboto', sans-serif;
+  text-align: center;
+  color: #858694;
+}
+
+.quote {
+  border: 1px solid #f5913e;
+  font-family: 'roboto', sans-serif;
+  padding: 50px;
+  width: 40%;
+  margin: auto;
+}
+
+.quote-con {
+  height: 70vh;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
