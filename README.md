@@ -18,13 +18,13 @@ coming soon
 ## Getting Started
 
 
-git clone link [https://github.com/BonkeGcobo/math-magician.git] 
-cd math-magician
-npm install 
-npm start
+### To get a local copy up and running follow these simple example steps.
+clone the repo in your local repo [https://github.com/BonkeGcobo/math-magician.git]  
 
-
-To get a local copy up and running follow these simple example steps.
+By following these Steps:  
+ 1) git clone [https://github.com/BonkeGcobo/math-magician.git]    
+ 2) cd math-magician 
+ 3) You have access the repo in your local machine    
 
 ### Prerequisites
  Internet connection
