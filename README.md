@@ -29,6 +29,11 @@ By following these Steps:
 ### Prerequisites
  Internet connection
 
+### Check linter errors
+
+ 1) Install npm
+ 3) For CSS: npx stylelint "**/*.{css,scss}"  (--fix, to fix all stylelint errors)
+ 4) For JS: npx eslint . (--fix, to fix all the js errors)
 
 
 
