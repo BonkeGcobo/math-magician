@@ -75,6 +75,10 @@ body {
   height: 100vh;
 }
 
+#root {
+  height: 100vh;
+}
+
 .NavLinks {
   list-style: none;
   display: flex;
@@ -86,7 +90,7 @@ body {
 .calSection {
   margin-top: 1.5rem;
   display: flex;
-  height: 100vh;
+  height: 80%;
   justify-content: space-between;
 }
 
@@ -112,10 +116,7 @@ a:hover {
 }
 
 .Home-section {
-  padding-top: 1rem;
-  background-color: #e0e0e0;
-  height: 100vh;
-  padding-bottom: 7rem;
+  height: 80%;
 }
 
 .welcome-title {
@@ -130,6 +131,7 @@ a:hover {
 .footer {
   background-color: #f5913e;
   color: #fff;
+  height: 10%;
   font-family: 'roboto', sans-serif;
 }
 
