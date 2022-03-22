@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
-import calculate from '../logic/calculate';
+import calculate from '../logic/calculator';
 
-// eslint-disable-next-line react/prefer-stateless-function
 const Calculator = () => {
   const [state, setState] = useState({});
 
@@ -14,6 +13,11 @@ const Calculator = () => {
   return (
     <>
       <section className="calSection">
+        <div className="rightText">
+          <h2 className="Math">
+            Let&apos;s Do Some Math!
+          </h2>
+        </div>
         <div className="calcStructure">
           <div className="outPutContainer">
             <p>{next || total || 0}</p>
@@ -21,30 +25,30 @@ const Calculator = () => {
           <div className="btnSection">
             <div className="lftBtnsAll">
               <div className="lftBtns">
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">AC</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">+/-</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">%</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">7</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">8</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">9</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">4</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">5</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">6</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">1</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">2</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">3</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">AC</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">+/-</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">%</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">7</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">8</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">9</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">4</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">5</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">6</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">1</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">2</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">3</button></div>
               </div>
               <div className="zero">
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">0</button></div>
-                <div className="calBtn"><button type="button" onClick={handleClick} className="lbtn">.</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">0</button></div>
+                <div className="calBtn"><button onClick={handleClick} type="button" className="lbtn">.</button></div>
               </div>
             </div>
             <div className="rgtBtns">
-              <div className="calBtn"><button type="button" onClick={handleClick} className="rbtn">/</button></div>
-              <div className="calBtn"><button type="button" onClick={handleClick} className="rbtn">x</button></div>
-              <div className="calBtn"><button type="button" onClick={handleClick} className="rbtn">-</button></div>
-              <div className="calBtn"><button type="button" onClick={handleClick} className="rbtn">+</button></div>
-              <div className="calBtn"><button type="button" onClick={handleClick} className="rbtn">=</button></div>
+              <div className="calBtn"><button onClick={handleClick} type="button" className="rbtn">/</button></div>
+              <div className="calBtn"><button onClick={handleClick} type="button" className="rbtn">*</button></div>
+              <div className="calBtn"><button onClick={handleClick} type="button" className="rbtn">-</button></div>
+              <div className="calBtn"><button onClick={handleClick} type="button" className="rbtn">+</button></div>
+              <div className="calBtn"><button onClick={handleClick} type="button" className="rbtn">=</button></div>
             </div>
           </div>
         </div>
@@ -52,5 +56,4 @@ const Calculator = () => {
     </>
   );
 };
-
 export default Calculator;
